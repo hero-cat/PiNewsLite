@@ -9,7 +9,8 @@ from kivymd.uix.screen import MDScreen
 
 # TODO: POSSIBILITES FOR REDUCED SPEED:
 # KIVYMD
-
+# 1.5 Float width
+# screen?
 
 
 class TestApp(MDApp):
@@ -22,16 +23,6 @@ class TestApp(MDApp):
             self.rvdata = fresh_data
 
 
-class LoginScreen(MDScreen):
-    username = 'joe'
-    password = 'aaa'
-
-    def login(self, login_text, password_text):
-        if login_text == self.username and password_text == self.password:
-            self.parent.current = 'menu'
-
-        else:
-            self.parent.current = 'menu'
 
 
 if __name__ == '__main__':

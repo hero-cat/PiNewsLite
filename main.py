@@ -18,10 +18,12 @@ class TestApp(MDApp):
     def dir_get(self, *args):
         '''Provides a way for the .kv to load files.'''
         path_list = [self.kivy_dir]
+        print(path_list)
         for arg in args:
             path_list.append(arg)
         self.dir_get_counter += 1
         return os.path.join(*path_list)
+
 
 
 if __name__ == '__main__':

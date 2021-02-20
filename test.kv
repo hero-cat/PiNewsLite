@@ -35,11 +35,10 @@ ScreenManager:
         Rectangle:
             pos: self.pos
             size: self.size
-            source: app.dir_get('blur.png')
+            source: 'blur.png'
 
 <ImageScreen@MDScreen>
 
-    MDRaisedButton:
-        on_press: app.dir_get('blur.png')
+
     Image:
         source: 'blur.png'

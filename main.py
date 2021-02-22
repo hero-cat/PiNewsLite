@@ -1,9 +1,5 @@
 from kivymd.app import MDApp
-from kivy.clock import Clock
-from functools import partial
-import os
-
-from os.path import dirname, join
+from kivymd import uix
 
 
 class TestApp(MDApp):
